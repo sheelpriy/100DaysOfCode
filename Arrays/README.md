@@ -10,7 +10,6 @@ creating an array of defined length with Array constructor
 creating an array with square brakcets
     const arr = [];
 `
-
 ## Writing Items into an Array
 `
 writing to a given index index
@@ -25,3 +24,4 @@ writing at the end of array
 read value from a given index
     const value = arr[index]
 `
+

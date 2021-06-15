@@ -13,3 +13,4 @@ var sortedSquares = function (nums) {
 
 
 sortedSquares([-4,-1,0,3,10])
+
