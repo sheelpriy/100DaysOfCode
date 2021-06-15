@@ -10,7 +10,5 @@ After sorting, it becomes [0,1,9,16,100].
 var sortedSquares = function (nums) {
     return nums.map((a) => a * a).sort((a, b) => a - b)
 };
-
-
 sortedSquares([-4,-1,0,3,10])
 

@@ -24,8 +24,6 @@ var findMaxConsecutiveOnes = function(nums) {
     if(currentCount>maxCount){
         maxCount = currentCount;
     }
-    
-    
     return maxCount;
 };
 
