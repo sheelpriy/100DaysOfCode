@@ -26,3 +26,5 @@ function minimumBribes(q) {
     console.log(bribeCount)
 }
 
+minimumBribes([2, 1, 5, 3, 4])
+

@@ -34,3 +34,5 @@ function minimumSwaps(arr) {
     }
     return swapCount
 }
+
+minimumSwaps([7, 1, 3, 2, 4, 5, 6]);
