@@ -30,10 +30,10 @@ function arrayManipulation(n, queries) {
     let max = 0;
     while (l > -1) {
         let i = queries[l][0] - 1;
-        let end = queries[l][1] - 1;
+        let end = queries[l][1];
         let add = queries[l][2];
 
-        for (i; i <= end; i++) {
+        for (i; i < end; i++) {
             arr[i] += add;
             max = Math.max(max, arr[i]);
         }
