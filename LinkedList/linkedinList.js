@@ -22,9 +22,9 @@ class LinkedList {
         let current;
         // if list is Empty add the
         // element and make it head
-        if (this.head == null){
+        if (this.head == null) {
             this.head = node;
-        }else {
+        } else {
             current = this.head;
             // find the last node
             while (current.next) {
@@ -33,6 +33,32 @@ class LinkedList {
             current.next = node;
         }
         this.size++;
+    }
+
+    insertAt(element, index) {
+        if (index < 0 || index > this.size)
+            return console.log("Please enter a valid index.");
+        else {
+            const node = new Node(element);
+            let curr, prev;
+            curr = this.head;
+            // first index
+            if (index == 0) {
+                node.next = this.head;
+                this.head = node;
+            } else {
+                curr = this.head;
+                let curIndex = 0;
+                while (curIndex < index) {
+                    curIndex++;
+                    prev = curr;
+                    curr = curr.next;
+                }
+                node.next = curr;
+                prev.next = node;
+            }
+            this.size++;
+        }
     }
 }
 

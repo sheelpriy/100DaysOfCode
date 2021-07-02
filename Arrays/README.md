@@ -19,7 +19,7 @@ writing at the end of array
     arr.push(value);
 `
 
-## Reasding items from Array
+## Reading items from Array
 `
 read value from a given index
     const value = arr[index]

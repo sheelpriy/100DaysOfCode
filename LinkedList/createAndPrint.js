@@ -11,3 +11,7 @@ lList.add(12);
 
 
 console.log(lList)
+
+lList.insertAt(99, 1);
+console.log(lList)
+// console.log(JSON.stringify(lList))
