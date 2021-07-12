@@ -14,6 +14,15 @@ class LinkedList {
         this.head = null;
         this.size = 0;
     }
+
+    print(){
+        let curr = this.head;
+        while(curr){
+            console.log(curr.data)
+            curr = curr.next;
+        }
+    }
+
     // adds an element at the end of list
     add(element) {
         // creates a new node
@@ -59,6 +68,25 @@ class LinkedList {
             }
             this.size++;
         }
+    }
+    removeFrom(index){
+        let curr = this.head;
+        if (index < 0 || index >= this.size)
+            return console.log("Please enter a valid index.");
+        if (index == 0) {
+            this.head = curr.next;
+        } else {
+            curr = this.head;
+            let prev =null;
+            let curIndex = 0;
+            while (curIndex < index) {
+                curIndex++;
+                prev = curr;
+                curr = curr.next;
+            }
+            prev.next = curr.next;
+        }
+        this.size--;
     }
 }
 
