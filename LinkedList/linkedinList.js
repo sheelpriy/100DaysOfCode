@@ -15,9 +15,9 @@ class LinkedList {
         this.size = 0;
     }
 
-    print(){
+    print() {
         let curr = this.head;
-        while(curr){
+        while (curr) {
             console.log(curr.data)
             curr = curr.next;
         }
@@ -69,7 +69,7 @@ class LinkedList {
             this.size++;
         }
     }
-    removeFrom(index){
+    removeFrom(index) {
         let curr = this.head;
         if (index < 0 || index >= this.size)
             return console.log("Please enter a valid index.");
@@ -77,7 +77,7 @@ class LinkedList {
             this.head = curr.next;
         } else {
             curr = this.head;
-            let prev =null;
+            let prev = null;
             let curIndex = 0;
             while (curIndex < index) {
                 curIndex++;
@@ -88,6 +88,13 @@ class LinkedList {
         }
         this.size--;
     }
+    display(head) {
+        let start = head;
+        while (start) {
+            console.log(start.data + " ");
+            start = start.next;
+        }
+    };
 }
 
 
