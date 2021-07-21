@@ -1,3 +1,8 @@
+/* 
+So, idea of this approach is to implement multiplication digit by digit,
+lesser significant digit to more significant
+*/
+
 const MAX = 1000;
 
 function multiply(x, res, res_size) {
