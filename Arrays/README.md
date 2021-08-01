@@ -25,3 +25,9 @@ read value from a given index
     const value = arr[index]
 `
 
+## Higher order in built array function 
+
+### Array.map(fn)
+const arr = [1, 2, 3, 4, 5]
+
+const doubleArr =  arr.map(a=> 2*a)
